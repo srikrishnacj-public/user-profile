@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "This is from linux profile"
 
-cloudinit=
+# cloudinit=
 # if [[ "$string" == *"substring"* ]]
 # then
 #   echo "Substring found."
