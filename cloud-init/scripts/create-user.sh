@@ -32,8 +32,9 @@ function setup_dir_layout(){
 
     mkdir -p /home/$SCRIPT_USER/mydrive/gsync
     mkdir -p /home/$SCRIPT_USER/mydrive/dsync
-    mkdir -p /home/$SCRIPT_USER/mydrive/apps-data
-    mkdir -p /home/$SCRIPT_USER/mydrive/user-apps
+    mkdir -p /home/$SCRIPT_USER/mydrive/apps/data
+    mkdir -p /home/$SCRIPT_USER/mydrive/apps/config
+    mkdir -p /home/$SCRIPT_USER/mydrive/apps/installed
     mkdir -p /home/$SCRIPT_USER/mydrive/tmp
     mkdir -p /home/$SCRIPT_USER/mydrive/projects/personal
     mkdir -p /home/$SCRIPT_USER/mydrive/projects/official
