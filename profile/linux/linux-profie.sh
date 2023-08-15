@@ -1,10 +1,11 @@
 #!/bin/bash
 echo "This is from linux profile"
 
-# cloudinit=
-# if [[ "$string" == *"substring"* ]]
+# cloudinit=$(cloud-init status)
+# if [[ "$cloudinit" == *"running"* ]]
 # then
-#   echo "Substring found."
+#   echo "Waiting for cloud init to finish"
+#   cloud-init status --wait
 # else
-#   echo "Substring not found."
+  
 # fi
