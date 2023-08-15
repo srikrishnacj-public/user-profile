@@ -14,6 +14,7 @@ function install_essential(){
             snapd htop btop sysstat
 
     sudo apt install snapd
+    sudo snap install starship --edge
 }
 
 install_essential;
