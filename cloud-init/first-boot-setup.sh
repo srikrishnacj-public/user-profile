@@ -8,3 +8,5 @@ echo "Script Root DIR: "$SCRIPT_ROOT_DIR > /tmp/run.log
 bash $SCRIPT_ROOT_DIR/scripts/create-user.sh
 bash $SCRIPT_ROOT_DIR/scripts/install-essentials.sh
 bash $SCRIPT_ROOT_DIR/scripts/ssh-config.sh
+
+sudo -u $SCRIPT_USER bash -c "bash $SCRIPT_ROOT_DIR/scripts/install-profile.sh"
