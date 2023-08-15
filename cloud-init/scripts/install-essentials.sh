@@ -13,7 +13,6 @@ function install_essential(){
             neofetch git \
             snapd htop btop sysstat
 
-    sudo apt-get install snapd
     sudo snap install starship --edge
 }
 
