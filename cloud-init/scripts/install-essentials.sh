@@ -1,5 +1,7 @@
 #!/bin/bash
 
+alias apt-get="apt-get -q -y"
+
 function install_essential(){
     log "updating apt cache"
     sudo apt-get update
