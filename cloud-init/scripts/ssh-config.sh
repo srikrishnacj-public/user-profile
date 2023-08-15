@@ -17,5 +17,11 @@ function configure_ssh_ftp(){
     sudo systemctl status vsftpd.service
 }
 
+function log(){
+    echo ""
+    echo ">>>>>>>>>>>>>>>>>>>>>>>>> $1 <<<<<<<<<<<<<<<<<<<<<<<<<"
+    echo ""
+}
+
 ssh_config;
 configure_ssh_ftp;
