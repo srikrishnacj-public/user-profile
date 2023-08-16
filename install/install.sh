@@ -26,12 +26,22 @@ function install_mac_profile() {
 }
 
 function install_profile(){
-    echo "$OSTYPE" >> /tmp/run.log
-    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-        install_linux_profile;
-    elif [[ "$OSTYPE" == "darwin"* ]]; then
-        install_mac_profile
-    fi
+    # echo "$OSTYPE" >> /tmp/run.log
+    # if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    #     install_linux_profile;
+    # elif [[ "$OSTYPE" == "darwin"* ]]; then
+    #     install_mac_profile
+    # fi
+
+    case "$OSTYPE" in
+        solaris*) echo "SOLARIS" ;;
+        darwin*)  install_mac_profile ;; 
+        linux*)   install_linux_profile ;;
+        bsd*)     echo "BSD" ;;
+        msys*)    echo "WINDOWS" ;;
+        cygwin*)  echo "ALSO WINDOWS" ;;
+        *)        echo "unknown: $OSTYPE" ;;
+    esac
 }
 
 FILE=~/.user-profile-installed
