@@ -6,7 +6,6 @@
 rm $HOME/.user-profile-installed
 
 function install_linux_profile() {
-    echo "
     bash $HOME/mydrive/user-profile/install/common-install.sh
     bash $HOME/mydrive/user-profile/install/linux-install.sh
     touch $HOME/.user-profile-installed
@@ -14,7 +13,6 @@ function install_linux_profile() {
 }
 
 function install_mac_profile() {
-    echo "
     bash $HOME/mydrive/user-profile/install/common-install.sh
     bash $HOME/mydrive/user-profile/install/mac-install.sh
     touch $HOME/.user-profile-installed
