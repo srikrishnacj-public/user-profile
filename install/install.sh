@@ -20,12 +20,12 @@ function install_mac_profile() {
 }
 
 function install_profile(){
-    # echo "$OSTYPE" >> /tmp/run.log
-    # if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-    #     install_linux_profile;
-    # elif [[ "$OSTYPE" == "darwin"* ]]; then
-    #     install_mac_profile
-    # fi
+    rm $HOME/.bashrc
+    rm $HOME/.bash_profile
+    rm $HOME/.profile
+    touch $HOME/.bashrc
+    touch $HOME/.bash_profile
+    touch $HOME/.profile
 
     case "$OSTYPE" in
         solaris*) echo "SOLARIS" ;;
