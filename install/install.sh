@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# export SCRIPT_USER=cj;
+# export SCRIPT_ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
 rm $HOME/.user-profile-installed
 
 function install_linux_profile() {
