@@ -1,5 +1,6 @@
 #!/bin/bash
 export SCRIPT_USER=cj;
+export SCRIPT_ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 alias cl="sudo cat /var/log/cloud-init-output.log"
 alias rl="sudo cat /tmp/run.log"
