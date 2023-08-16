@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "alias source.sh"
+
 alias apt="sudo apt -y"
 alias aria="aria2c -x 8 -s 8 "
 alias kz='echo Needtochange\$1 | sudo -S /Users/a503959/mydrive/user-apps/kill-zscaler/kill-zscaler.sh'
