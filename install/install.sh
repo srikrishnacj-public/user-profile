@@ -7,7 +7,7 @@ rm $HOME/.user-profile-installed
 
 function install_linux_profile() {
     echo "
-    bash $HOME/mydrive/user-profile/common/common-install.sh
+    bash $HOME/mydrive/user-profile/install/common-install.sh
     bash $HOME/mydrive/user-profile/install/linux-install.sh
     source $HOME/mydrive/user-profile/profile/common/common-profile.sh" >> "$HOME/.bashrc"
     source $HOME/mydrive/user-profile/profile/linux/linux-profile.sh" >> "$HOME/.bashrc"
@@ -17,7 +17,7 @@ function install_linux_profile() {
 
 function install_mac_profile() {
     echo "
-    bash $HOME/mydrive/user-profile/common/common-install.sh
+    bash $HOME/mydrive/user-profile/install/common-install.sh
     bash $HOME/mydrive/user-profile/install/mac-install.sh
     source $HOME/mydrive/user-profile/profile/common/common-profile.sh" >> "$HOME/.bashrc"
     source $HOME/mydrive/user-profile/profile/mac/mac-profile.sh" >> "$HOME/.bashrc"
@@ -26,6 +26,7 @@ function install_mac_profile() {
 }
 
 function install_profile(){
+    echo "$OSTYPE" >> /tmp/run.log
     if [[ "$OSTYPE" == "linux-gnu"* ]]; then
         install_linux_profile;
     elif [[ "$OSTYPE" == "darwin"* ]]; then
