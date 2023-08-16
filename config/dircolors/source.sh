@@ -1,4 +1,5 @@
 #!/bin/bash
 
-d=$HOME/mydrive/user-profile/config/dircolors/.dircolors
-test -r $d && eval "$(dircolors $d)"
+eval $(dircolors ~/.dir_colors)
+# d=$HOME/mydrive/user-profile/config/dircolors/.dircolors
+# test -r $d && eval "$(dircolors $d)"
